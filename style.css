@@ -24,3 +24,13 @@ h1 {
   background-color: red;
   width: 40vw;
 }
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}
