@@ -19,9 +19,13 @@ body {
   background-color: azure;
 }
 
+header {
+  color: white;
+}
+
 h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: red;
+  background-color: blue;
   width: 40vw;
 }
 
