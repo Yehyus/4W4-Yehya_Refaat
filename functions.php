@@ -18,4 +18,12 @@ function enregistrement_nav_menu(){
 }
 add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
     
+/********************************************* add_theme_support */
+add_theme_support('title-tag');
+add_theme_support('custom-logo', 
+                    array(
+                        'height' => 150,
+                        'width'  => 150,
+));
+add_theme_support('post-thumbnails');
 ?>
