@@ -1,11 +1,14 @@
 a {
-    color: rgb(76, 88, 135);
-    
+    color: black;
+    text-decoration: none;
     &:visited {
-        color: rgb(76, 135, 104);
+        color: blue;
     }
     &:hover {
         color: rgb(211, 28, 28);
     }
+
+    display: flex;
+    justify-content: center;
 
 }

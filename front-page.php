@@ -16,7 +16,7 @@
         
         <?php // the_content(); // affiche le contenu complet de l'article ?>
         <?php // the_excerpt(); // affiche un résumé de l'article ?>
-        <?= wp_trim_words(get_the_excerpt(), 10, "&#10148") ?>
+        <p class="articles_text"><?= wp_trim_words(get_the_excerpt(), 10, "&#10148") ?></p>
 
             <hr>
         <?php endwhile;
