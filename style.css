@@ -327,14 +327,10 @@ h1 {
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
-  display: flex;
-  justify-content: center;
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
-  display: flex;
-  justify-content: center;
 }
 
 h4 {
@@ -373,6 +369,11 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -397,8 +398,13 @@ body {
   flex-wrap: wrap;
 }
 .site__footer section {
-  border: 1px solid #aaa;
   flex: 1 1 200px;
+  border: 1px solid #aaa;
+  margin-top: 2rem;
+}
+
+.site__header h2 {
+  padding-left: 4rem;
 }
 
 .site__header__logo {
@@ -420,17 +426,19 @@ body {
   font-size: 30px;
 }
 
-.articles_text {
-  display: flex;
-  justify-content: center;
-}
-
-main {
-  background-color: white;
-  width: 50vw;
-  margin: 0 auto;
-}
-
 hr {
   width: 50vw;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.blocflex article {
+  flex: 1 1 200px;
+  border: 1px solid blue;
+  border-radius: 15%;
+  padding: 0.4rem;
 }/*# sourceMappingURL=style.css.map */

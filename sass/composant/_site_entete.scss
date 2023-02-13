@@ -1,4 +1,8 @@
-.site__header {}
+.site__header {
+    h2 {
+        padding-left: 4rem;
+    }
+}
 
 .site__header__logo {
     display: flex;
@@ -20,19 +24,9 @@
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 30px;
             }
+           
         }
     }
-}
-
-.articles_text {
-    display: flex;
-    justify-content: center;
-}
-
-main {
-    background-color: white;
-    width: 50vw;
-    margin: 0 auto;
 }
 
 hr {

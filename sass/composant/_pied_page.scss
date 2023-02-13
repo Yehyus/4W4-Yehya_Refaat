@@ -4,7 +4,8 @@
     flex-wrap: wrap;
 
     section {
-        border: 1px solid #aaa;
         flex: 1 1 200px;
+        border: 1px solid #aaa;
+        margin-top: 2rem;
     }
 }
