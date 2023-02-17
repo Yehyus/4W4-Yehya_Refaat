@@ -1,9 +1,9 @@
-# Exercice 1
-## 4W4 - Conception d'interface et développement web
-### Auteur : Yehya Refaat
-#### Description
-- Installation local de Wordpress
-- Création d'un thème simple
-- Création d'un dépôt git local
-- Creation d'un dépôt github
-#### Référence- https://developer.wordpress.org/themes/
+Lab #3
+4w4 - Conception d'interface et développement Web
+Auteur: Yehya Refaat
+Description
+Améliorer la classe .blocflex
+Création du modèle category.php
+Améliorer l'affichage des articles « markdown »
+Références
+http://cidweb18.sg-host.com/
