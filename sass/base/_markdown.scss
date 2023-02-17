@@ -14,7 +14,7 @@ ul > li {}
 
 ol > li {}
 
-li::before {
+main li::before {
     content: "»";
     background: lightgray;
     border-radius: 1ch;

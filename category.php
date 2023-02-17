@@ -6,7 +6,6 @@
 ?>
 <?php get_header(); ?>
 <main>
-    <h3>category.php</h3>
     <section class="blocflex">
 <?php
     if (have_posts()): 

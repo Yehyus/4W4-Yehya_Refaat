@@ -388,7 +388,7 @@ a:hover {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #4F5165;
 }
 
 /* Les balises qu'on utilises dans la conversion des fichers markdown */
@@ -396,7 +396,7 @@ ul {
   list-style-type: none;
 }
 
-li::before {
+main li::before {
   content: "»";
   background: lightgray;
   border-radius: 1ch;
@@ -441,7 +441,7 @@ li::before {
 }
 
 hr {
-  width: 50vw;
+  width: 80vw;
 }
 
 /*
@@ -468,4 +468,9 @@ hr {
 .blocflex article {
   border: 1px solid #aaa;
   padding: 1rem;
+  background-color: #293132;
+  transition: all 0.2s ease-in-out;
+}
+.blocflex article:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

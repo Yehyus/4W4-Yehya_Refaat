@@ -24,5 +24,13 @@
     article {
       border: 1px solid #aaa;
       padding: 1rem;
+      background-color: #293132;
+      transition: all .2s ease-in-out;
+    }
+    
+    article:hover {
+        transform: scale(1.1);
     }
   }
+
+
