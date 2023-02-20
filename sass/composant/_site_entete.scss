@@ -1,12 +1,18 @@
 .site__header {
     h2 {
-        padding-left: 4rem;
+        padding-left: 11.5vw;
     }
 }
 
 .site__header__logo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.logomenu {
+    display: flex;
+    
     align-items: center;
 }
 
@@ -24,7 +30,7 @@
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 30px;
             }
-           
+   
         }
     }
 }

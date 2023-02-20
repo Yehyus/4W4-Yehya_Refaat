@@ -1,11 +1,14 @@
 .site__footer {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
+
 
     section {
-        flex: 1 1 200px;
         border: 1px solid #aaa;
+        display: flex;
+        justify-content: space-around;
         margin-top: 2rem;
+        color: white;
+        font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
     }
 }

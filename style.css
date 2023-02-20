@@ -141,6 +141,7 @@ sup {
  */
 img {
   border-style: none;
+  padding-right: 50vw;
 }
 
 /* Forms
@@ -408,22 +409,29 @@ main li::before {
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .site__footer section {
-  flex: 1 1 200px;
   border: 1px solid #aaa;
+  display: flex;
+  justify-content: space-around;
   margin-top: 2rem;
+  color: white;
+  font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
 }
 
 .site__header h2 {
-  padding-left: 4rem;
+  padding-left: 11.5vw;
 }
 
 .site__header__logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logomenu {
+  display: flex;
   align-items: center;
 }
 
