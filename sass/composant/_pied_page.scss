@@ -2,13 +2,11 @@
     display: flex;
     justify-content: space-around;
 
-
     section {
-        border: 1px solid #aaa;
         display: flex;
         justify-content: space-around;
         margin-top: 2rem;
-        color: white;
+        color: black;
         font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
     }
 }

@@ -141,7 +141,6 @@ sup {
  */
 img {
   border-style: none;
-  padding-right: 50vw;
 }
 
 /* Forms
@@ -382,7 +381,7 @@ a {
   justify-content: center;
 }
 a:visited {
-  color: blue;
+  color: #4d7c8a;
 }
 a:hover {
   color: rgb(211, 28, 28);
@@ -412,11 +411,10 @@ main li::before {
   justify-content: space-around;
 }
 .site__footer section {
-  border: 1px solid #aaa;
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
-  color: white;
+  color: black;
   font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
 }
 
@@ -432,17 +430,22 @@ main li::before {
 
 .logomenu {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
 /* ------------------------------ menu-entete */
+.menu-entete-container {
+  margin-left: auto;
+}
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item a {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   padding: 5px 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
@@ -478,7 +481,17 @@ hr {
   padding: 1rem;
   background-color: #293132;
   transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .blocflex article:hover {
   transform: scale(1.1);
+}
+
+input {
+  background-color: transparent;
+}
+
+.recherche__bouton {
+  background-color: transparent;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

@@ -10,14 +10,14 @@
 <body>
   <header class="site__header">
     <section class="site__header__logo">
-      <div class="logomenu">
         <?php the_custom_logo(); ?>
+        <div class="logomenu">
         <?php wp_nav_menu(array(
           "menu" => "entete",
           "container" => "nav"
           ))?>
-      </div>
-      <?php get_search_form() ?>
+        <?php get_search_form() ?>
+        </div>
     </section>
     <h2><?= bloginfo('description')?></h2>
   </header>

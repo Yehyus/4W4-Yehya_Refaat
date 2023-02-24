@@ -12,12 +12,14 @@
 
 .logomenu {
     display: flex;
-    
+    flex-direction: column-reverse;
     align-items: center;
 }
 
 /* ------------------------------ menu-entete */
 .menu-entete-container { // nav
+    margin-left: auto;
+
     .menu { // ul
         display: flex;
         list-style-type: none;
@@ -25,7 +27,8 @@
 
         .menu-item { // li
             a {
-                display: block;
+                display: flex;
+                justify-content: space-between;
                 padding: 5px 20px;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 30px;

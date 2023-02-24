@@ -15,7 +15,6 @@
             <h3>
                 <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
             </h3>
-            
             <?php // the_content(); // affiche le contenu complet de l'article ?>
             <?php // the_excerpt(); // affiche un résumé de l'article ?>
             <p><?php if(is_category('cours')) {echo "cours";} ?></p>
