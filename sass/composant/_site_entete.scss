@@ -1,8 +1,4 @@
-.site__header {
-    h2 {
-        padding-left: 11.5vw;
-    }
-}
+.site__header {}
 
 .site__header__logo {
     display: flex;
@@ -12,32 +8,23 @@
 
 .logomenu {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: flex-start;
     align-items: center;
 }
 
-/* ------------------------------ menu-entete */
+/* -------------------------------------------------- menu-enetete */
 .menu-entete-container { // nav
-    margin-left: auto;
 
-    .menu { // ul
-        display: flex;
+    .menu{ // ul
+        display : flex;
         list-style-type: none;
-        justify-content: flex-end;
-
-        .menu-item { // li
+        justify-content: flex-start;
+        .menu-item { //li
+            color : rgb(0, 42, 85);
             a {
-                display: flex;
-                justify-content: space-between;
-                padding: 5px 20px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 30px;
+            display : block;
+            padding : 5px 20px;
             }
-   
         }
     }
-}
-
-hr {
-    width: 80vw;
-}
+    }
