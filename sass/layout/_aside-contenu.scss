@@ -15,7 +15,7 @@
 
 .site__footer {
   grid-area: footer;
-  background-color: #4F5165;
+  background-color: #27474e;
 }
 .site__aside {
   grid-area: aside;
@@ -31,13 +31,13 @@
     "main"
     "footer";
   // row-gap: 50px;
-  background-color: #4F5165;
+  background-color: #27474e;
   @media screen and (min-width: $largeur__bureau) {
       grid-template-columns: 20% auto;
       grid-template-areas:
       "header header"
       "aside main"
-     /*  ". main" */
+      /*  ". main" */
       "footer footer";
   }
 }

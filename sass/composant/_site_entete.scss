@@ -8,6 +8,9 @@
     align-items: center;
 }
 
+.recherche__bouton {
+    border: none;
+}
 
 .menu__recherche {
     display: flex;
@@ -57,7 +60,6 @@
         }
     }
     }
-
 
     /* //////////////////////////////////////////// Zone de recherche */
 

@@ -1,7 +1,5 @@
 <?php
-
 function ajouter_styles() {
-
 wp_enqueue_style(   'style-principale',  // identificateur du link css
                     get_template_directory_uri() . '/style.css',  // enroit où se trouve le fichier style.css
                     array(), // les fichiers css qui dépendent de style.css
@@ -9,8 +7,6 @@ wp_enqueue_style(   'style-principale',  // identificateur du link css
 ); 
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
-
-
 
 /* ----------------------------------- Enregistrement des menus */
 function enregistrement_nav_menu(){
@@ -20,6 +16,21 @@ function enregistrement_nav_menu(){
     ) );
 }
 add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );     
+
+/* ----------------------------------- Modification des choix de menu « cours » */
+function personnalisation_menu_item_title($title, $item, $args) {
+    // Remplacer 'cours' par l'identifiant de votre menu
+    if($args->menu == 'aside') {
+// Modifier la longueur du titre en fonction de vos besoins
+$sigle = substr($title,0,7);
+$title = substr($title,7);
+$title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>"; // on garde uniquement trois mots pour le titre du choix
+}
+return $title;
+}
+add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 3);
+
+
 
 /*----------------------------------------- add_theme_support() */
 add_theme_support( 'title-tag' );
