@@ -1,5 +1,5 @@
 <footer class="site__footer">
-    <section>4W4</section>
+    <section><?php the_custom_logo(); ?></section>
     <section>Yehya Refaat</section>
     <section>TIM</section>
 </footer>
