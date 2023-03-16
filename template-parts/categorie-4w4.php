@@ -4,8 +4,8 @@
 */
 
 $titre = get_the_title(); 
-if (substr($titre,0,1) == '0'){
-    $titre = substr($titre,1);
+if (substr($titre, 0, 1) == '0'){
+    $titre = substr($titre, 1);
 }
 ?>   
     <article class="blocflex__article">
