@@ -1,35 +1,38 @@
-.menu-cours-container { // nav
-    
-    .menu { // ul
-        display: flex;
-        flex-direction: row;
-        @media screen and (min-width: $largeur__bureau) {
-            flex-direction: column;
-
-        }
-        .menu-item { // li
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            a {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                code {
-                    display: block;
-                    white-space: nowrap;
-                }
-
-                p {
-                    display: none;
-                    @media screen and (min-width: $largeur__bureau) {
-                        display: block;
-                        white-space: nowrap;
-                    }
-                }
-            }
-        }
+.site__aside {
+    display: none;
+    @media (min-width: 600px) {
+      display: block;
     }
-}
+    
+    a{
+      color: black;
+    }
+
+    h3 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    nav {
+     
+  
+      ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+  
+          padding: 0;
+          margin: 5px 5px;
+              @media (min-width: $largeur__bureau) {
+          flex-wrap: nowrap;
+          flex-direction: column;
+      }
+  
+        li {
+          list-style: none;
+          margin: 5px 5px;
+          border-bottom: 1px solid;
+        }
+      }
+    }
+  }

@@ -1,5 +1,5 @@
 <aside class="site__aside">
-    <h3>Menu secondaire</h3>
+    <h3>Menu</h3>
     <?php 
     $mon_menu  = "Menu note cours";
     if (in_category('cours')){
