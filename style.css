@@ -407,24 +407,33 @@ a:hover {
 
 /* --------------------------------------------- composant */
 .site__footer {
+  font-size: 1.5rem;
   display: flex;
-}
-
-.site__footer section {
-  background-color: #516769;
-  font-size: 2rem;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  border: 1px solid #aaa;
-  flex: 1 1 200px;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
+.menu-footer-container .menu, .menu-footer2-container .menu {
+  list-style-type: none;
+}
 /* --------------------------------------------------- Entete de la page */
+.site__header {
+  overflow-x: hidden;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+a.custom-logo-link {
+  transition: all 0.2s ease-in-out;
+}
+
+a.custom-logo-link:hover {
+  transform: scale(110%);
 }
 
 .recherche__bouton {
