@@ -1,10 +1,10 @@
 <?php 
-    $titre = get_the_title();
-    $sigle = substr($titre,0,7);
-    $titre_long = substr($titre, 7,-5);
-    $duree = "60";
-    // strpost($titre, '(')) permet de trouver la position du caractère ,(')
-?>   
+$titre = get_the_title();
+$sigle = substr($titre,0,7);
+$titre_long = substr($titre,7,-5); 
+$duree = substr($titre,-5,5)
+?>  
+
 <article class="blocflex__article">
     <h3><a href="<?php the_permalink(); ?>"> <?= $sigle ?></a></h3>
     <h5><?= $titre_long ?></h5>

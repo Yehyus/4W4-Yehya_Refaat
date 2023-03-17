@@ -391,45 +391,33 @@ a:hover {
   color: rgb(211, 28, 28);
 }
 
-/* Les balise qu'on utilse dans la conversion des fichiers markdown */
-/* Liste */
-ul {
-  list-style-type: none;
+.single h1, .single h2, .single h3 {
+  text-align: center;
+}
+.single ul {
+  padding-left: 1.5rem;
+}
+.single li {
+  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  margin: 8px;
+}
+.single p {
+  margin: 15px;
 }
 
-/*
-li::before {
-    content: "»";
-    background: lightgray;
-    border-radius: 1rem;
-    padding-inline: 1rem;
-    margin-inline-end: 1rem;
-  }
-*/
-/* ----------------------------  pre */
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 5rem;
-  background-color: rgb(42, 117, 192);
 }
-.site__footer .menu-footer-container {
-  flex-grow: 1;
-}
-.site__footer .menu-footer-container .menu {
+
+.site__footer section {
+  background-color: #516769;
+  font-size: 2rem;
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 0;
-}
-.site__footer .menu-footer-container .menu-item {
-  text-decoration: underline;
-}
-.site__footer .recherche {
-  margin: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #aaa;
+  flex: 1 1 200px;
 }
 
 /* --------------------------------------------------- Entete de la page */

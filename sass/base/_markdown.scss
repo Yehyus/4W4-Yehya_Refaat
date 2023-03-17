@@ -1,45 +1,20 @@
-/* Les balise qu'on utilse dans la conversion des fichiers markdown */
+.single{
 
-/* Liste */
-ul,ol{}
-
-ul > li,
-ol > li{
-
-}
-
-ul {
-    list-style-type: none;
-}
-
-ul>li {
-}
-
-ol>li{}
-/*
-li::before {
-    content: "»";
-    background: lightgray;
-    border-radius: 1rem;
-    padding-inline: 1rem;
-    margin-inline-end: 1rem;
+  h1,h2,h3{
+      text-align: center;
   }
-*/
-/* ----------------------------  pre */
-
-pre {}
-
-code {}
-
-i{}
-
-blockquote {}
-
-hr {}
-
-strong {}
+  ul{
+      padding-left: 1.5rem;
+  }
+  li{
+      
+      font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+      margin: 8px;
+  }
+  p{
+      margin: 15px;
+  }
 
 
 
-
-
+}
