@@ -22,10 +22,15 @@ function personnalisation_menu_item_title($title, $item, $args) {
     // Remplacer 'cours' par l'identifiant de votre menu
     if($args->menu == 'aside') {
 // Modifier la longueur du titre en fonction de vos besoins
-$sigle = substr($title,0,7);
-$title = substr($title,7);
+$sigle = substr($title, 0, 7);
+$title = substr($title, 7);
 $title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "</p>"; // on garde uniquement trois mots pour le titre du choix
 }
+
+if($args->menu == '4W4') {
+    if (substr($title, 0, 1) == "0")($title = substr($title, 1));
+}
+
 return $title;
 }
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 3);
