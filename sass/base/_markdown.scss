@@ -1,19 +1,21 @@
 .single{
 
   h1,h2,h3 {
-      text-align: center;
+    text-align: center;
   }
 
   ul {
-      padding-left: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   li {
-      font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
-      margin: 8px;
+    color: #db8a74;
+    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+    margin: 8px;
   }
 
   p {
-      margin: 15px;
+    color: #db8a74;
+    margin: 15px;
   }
 }

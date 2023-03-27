@@ -381,7 +381,7 @@ p {
 }
 
 a {
-  color: black;
+  color: #fac9b8;
   text-decoration: none;
 }
 a:visited {
@@ -398,10 +398,12 @@ a:hover {
   padding-left: 1.5rem;
 }
 .single li {
+  color: #db8a74;
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
   margin: 8px;
 }
 .single p {
+  color: #db8a74;
   margin: 15px;
 }
 
@@ -521,14 +523,6 @@ a.custom-logo-link:hover {
   flex-wrap: wrap;
 }
 
-/*.blocflex {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    // Cette déclaration sera meilleur quand min() sera mieux supporté
-    // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-    gap: 2rem;
-    margin: 2rem;
-}*/
 .blocflex__article {
   flex: 1 0 500px;
   margin: 20px;
@@ -544,6 +538,7 @@ a.custom-logo-link:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
+  color: #db8a74;
   margin: 0;
   padding: 0;
 }
@@ -565,7 +560,7 @@ article:hover {
   }
 }
 .site__aside a {
-  color: black;
+  color: white;
 }
 .site__aside h3 {
   text-align: center;

@@ -11,6 +11,7 @@
 )) ?>
 
 
+<svg data-src="https://s2.svgbox.net/social.svg?ic=github" width="32" height="32" color="#000000"></svg>
 </footer>
 <?php wp_footer(); ?>
 </body>
