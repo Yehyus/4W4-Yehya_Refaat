@@ -609,7 +609,7 @@ article:hover {
 
 @media screen and (min-width: 992px) {
   .site__main {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -646,7 +646,9 @@ article:hover {
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #aaa;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-top-left-radius: 20px; 
+  border-bottom-right-radius: 20px; 
 }
 
 @media screen and (min-width: 992px) {
@@ -654,6 +656,8 @@ article:hover {
     padding: 4%;
     margin-right: 1rem;
     flex: 1 1 30%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
 
@@ -661,9 +665,15 @@ article:hover {
   font-size: clamp(0.875rem, 0.4146rem + 0.7426vw, 1.25rem);
 }
 
+.resultat_search_titre p {
+  font-size: 1rem;
+  color: #db8a74;
+} 
+
 .resultat_search_resume {
   margin: 0 auto;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
   background-color: #40798c;
 }
 
@@ -677,7 +687,7 @@ article:hover {
   .resultat_search_resume{
     flex: 1 1 70%;
     line-height: 200%;
-    background-color: transparent;
+    background-color: #40798c;
   }
 }
 
