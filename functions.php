@@ -35,8 +35,6 @@ return $title;
 }
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 3);
 
-
-
 /*----------------------------------------- add_theme_support() */
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo',
@@ -45,7 +43,6 @@ add_theme_support( 'custom-logo',
                         'width'  => 150,
 ) );
 add_theme_support( 'post-thumbnails' );
-
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

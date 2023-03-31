@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
-<?php 
-/*
-  $nouvelle_classe = ""
-  if (is_front_page()){
-    $nouvelle_classe = 'no-aside';
-  }
-*/
-?>
-<!-- body class="site  // $nouvelle_classe " -->
 <body class="site <?php echo (is_front_page()?'no-aside':'');?>">
-
 <header class="site__header">
 <section class="site__header__logo">
     <?php the_custom_logo(); ?>
@@ -35,7 +25,8 @@
 </header>
 
 <?php 
-if ( ! is_front_page()){
+if ( ! is_front_page() && !is_search()){
 get_template_part("template-parts/aside"); 
 }
-?>
+?> 
+
