@@ -16,7 +16,7 @@
                     }    
                  get_template_part("template-parts/categorie", $ma_categorie);
       
-             endwhile;
+            endwhile;
         endif;    
     ?>
     </section>

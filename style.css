@@ -537,6 +537,7 @@ a.custom-logo-link:hover {
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
 .blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
   color: #db8a74;
   margin: 0;
@@ -600,6 +601,12 @@ article:hover {
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
+.search_titre {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: clamp(1.125rem, 0.5879rem + 0.8663vw, 1.5625rem);
+}
+
 @media screen and (min-width: 992px) {
   .site__main {
     max-width: 90%;
@@ -620,6 +627,7 @@ article:hover {
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -636,18 +644,15 @@ article:hover {
 .resultat_search_titre {
   background-color: #293132;
   padding: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid #aaa;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
 }
 
 @media screen and (min-width: 992px) {
-  .resultat_search_titre, .resultat_search_resume  {
+  .resultat_search_titre {
     padding: 4%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .resultat_search_titre{
+    margin-right: 1rem;
     flex: 1 1 30%;
   }
 }
@@ -671,8 +676,8 @@ article:hover {
 @media screen and (min-width: 992px) {
   .resultat_search_resume{
     flex: 1 1 70%;
-    background-color: transparent;
     line-height: 200%;
+    background-color: transparent;
   }
 }
 
@@ -683,7 +688,6 @@ article:hover {
 
 .site__aside {
   grid-area: aside;
-  background-color: #40798c;
 }
 
 .site {
