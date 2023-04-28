@@ -1,30 +1,22 @@
 <?php
 /**
- * Modèle par défaut
- * 
+ * Modèle search.php
  */
 ?>
 <?php get_header(); ?>
-<main class="site__main no-aside">
-<h2 class="titre_search">Résultats de la recherche</h3>
+<main class="site__main">
+<h3>search.php</h3>
+<h3>Résultats de la recherche</h3>
 <?php
     if (have_posts()): 
         while (have_posts()) : the_post();
-        
-    if (in_category('cours')) {
-        get_template_part('template-parts/search-cours', 'cours');
-    } 
-    
-    else {
-        get_template_part('template-parts/search-4w4');
-    }
-?>
+            the_title('<h4>','</h4>');?>
 
-<hr class="line_search">
-    
-<?php 
-    endwhile;
+            <?= wp_trim_words(get_the_excerpt(), 50, " [...] "); ?>
+            <hr>
+        <?php endwhile;
     endif;
 ?>
 </main>
+
 <?php get_footer(); ?>

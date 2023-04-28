@@ -1,16 +1,11 @@
 <footer class="site__footer">
-<section><?php the_custom_logo() ?></section>
-<?php wp_nav_menu(array(
-    "menu" => "footer",
-    "container" => "nav"
-)) ?>
-
-<?php wp_nav_menu(array(
-    "menu" => "footer2",
-    "container" => "nav"
-)) ?>
-
-<svg data-src="https://s2.svgbox.net/social.svg?ic=github" width="32" height="32" color="#000000"></svg>
+    <section><?php the_custom_logo(); ?></section>
+    <section>Colonne 2</section>
+    <section>
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_1' ); ?>
+        </div>
+    </section>
 </footer>
 <?php wp_footer(); ?>
 </body>

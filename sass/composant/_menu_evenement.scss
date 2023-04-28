@@ -1,0 +1,16 @@
+.menu-evenement-container{ // nav
+    .menu {//ul
+        display: flex;
+        .menu-item { //li
+            display : flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border : 2px solid #aaa;
+            height : 100px;
+            margin: 10px;
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+}
