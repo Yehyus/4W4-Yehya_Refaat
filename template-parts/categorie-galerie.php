@@ -1,8 +1,9 @@
 <?php
-/**
- * template part pour afficher la galerie dans la page d'accueil
-*/
+    //Template part pour afficher la galerie
+    //<?=(in_category('galerie') ? 'ajout' : '')
 ?>
-<article class="blocflex__galerie">
-    <?php the_content(); ?>
-</article>
+
+<div class="galerie" >
+   <h1 style="text-align: center;">Survoler pour voir la gallerie</h1>
+    <?= the_content(); ?>
+</div>
