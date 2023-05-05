@@ -4,6 +4,5 @@
 ?>
 
 <div class="galerie" >
-   <h1 style="text-align: center;">Survoler pour voir la gallerie</h1>
     <?= the_content(); ?>
 </div>
