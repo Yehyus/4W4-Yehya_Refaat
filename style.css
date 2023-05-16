@@ -409,16 +409,51 @@ a:hover {
 
 /* --------------------------------------------- composant */
 .site__footer {
-  font-size: 1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .site__footer {
+    flex-direction: row;
+  }
 }
 
-.menu-footer-container .menu, .menu-footer2-container .menu {
-  list-style-type: none;
+.site__footer section {
+  flex: 1 1 300px;
+  height: 20vh;
+  background: #40798c;
+  color: white;
+  font-weight: bolder;
 }
+
+.site__footer .texte1, .texte2, .texte3 {
+  margin: 1rem;
+}
+
+.site__footer h1 {
+  text-decoration: underline;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.site__footer h2 {
+  color: white;
+  font-size: 1rem;
+}
+
+.logo img {
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.logo img:hover {
+  transform: scale(110%);
+}
+
 /* --------------------------------------------------- Entete de la page */
 .site__header {
   overflow-x: hidden;
@@ -430,6 +465,19 @@ a:hover {
   align-items: center;
 }
 
+.site__header__logo a > img {
+  animation: inverser-logo 3s infinite ease-in-out;
+}
+
+@keyframes inverser-logo {
+  from, to {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+    filter: drop-shadow(2px 2px rgba(255, 255, 255, 0.6980392157));
+  }
+}
 a.custom-logo-link {
   transition: all 0.2s ease-in-out;
 }

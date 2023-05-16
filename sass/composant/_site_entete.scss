@@ -10,6 +10,22 @@
     align-items: center;
 }
 
+.site__header__logo a>img{
+    animation: inverser-logo 3s infinite ease-in-out;
+}
+
+@keyframes inverser-logo {
+    from,to{
+        transform: rotateY(0deg);
+    }
+
+    50%{
+        transform: rotateY(180deg);
+        filter: drop-shadow(2px 2px #ffffffb2);
+    }
+}
+
+
 a.custom-logo-link {
     transition: all .2s ease-in-out;
 }
