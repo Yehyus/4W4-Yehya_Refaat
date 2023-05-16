@@ -21,10 +21,8 @@
 
     50%{
         transform: rotateY(180deg);
-        filter: drop-shadow(2px 2px #ffffffb2);
     }
 }
-
 
 a.custom-logo-link {
     transition: all .2s ease-in-out;
@@ -51,7 +49,7 @@ a.custom-logo-link:hover {
     }
 }
 
-/* -------------------------------------------------- menu-enetete */
+/* -------------------------------------------------- menu-entete */
 #chkMenu:checked ~ .menu-entete-container  {
     transform: translateX(0);
 }

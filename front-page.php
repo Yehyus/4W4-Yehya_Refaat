@@ -13,6 +13,13 @@
                 "container"=>"nav"
         ));
         ?>
+
+        <?php 
+            wp_nav_menu(array(
+                "menu"=>"Contenu-Accueil",
+                "container"=>"nav"
+        ));
+        ?>
     </section>
     <section class="blocflex">
     <?php

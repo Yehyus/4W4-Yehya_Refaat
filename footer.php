@@ -1,5 +1,4 @@
 <footer class="site__footer">
-    
     <section class="colonne1">
         <div class="texte1">
             <h1>Contact</h1>
