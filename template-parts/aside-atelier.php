@@ -1,14 +1,15 @@
-<aside class="site__aside">
-    <h3>Atelier</h3>
-    <?php 
-      $ma_categorie = "4w4";
-      if (in_category("atelier")){
-            $ma_categorie = 'atelier';
-        }
+<aside class="site__aside">  
+  <?php 
+    the_post_thumbnail(array(150, 150));
+  ?>
 
-      wp_nav_menu(array(
-        "menu" => $ma_categorie,
-        "container" => "nav"
-      ));
-     ?>
+  <h3>Atelier</h3>
+
+  <?php 
+  wp_nav_menu(array(
+    "menu" => 'atelier',
+    "container" => "nav"
+  )) ;
+  ?>
+    
 </aside>

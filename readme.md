@@ -6,8 +6,9 @@
 ## Description
 
 - Reproduction d'une maquette
-- Ajout de template-parts 
-- Amélioration du thème
+- Ajout de template-atelier
+- Ajout d'un menu aside pour atelier
+
 
 # Références
 
