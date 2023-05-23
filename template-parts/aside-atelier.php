@@ -1,14 +1,14 @@
 <aside class="site__aside">
     <h3>Atelier</h3>
     <?php 
-      $nouvelle_classe = "";
-      if (is_front_page() || 
-          (! in_category("cours") && ! in_category("4w4")) ){
-            $nouvelle_classe = 'no-aside';
+      $ma_categorie = "4w4";
+      if (in_category("atelier")){
+            $ma_categorie = 'atelier';
         }
 
-      if (is_page_template('template-atelier.php')) {
-           $nouvelle_classe = '';
-        }
+      wp_nav_menu(array(
+        "menu" => $ma_categorie,
+        "container" => "nav"
+      ));
      ?>
 </aside>
