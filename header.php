@@ -36,18 +36,17 @@
     <h2><?= bloginfo('description') ?></h2>
    </header>
     <?php 
-      $nouvelle_classe = "";
+      $nouvelle_classe = "Atelier";
         if  (is_front_page() || 
             (! in_category("cours") && ! in_category("4w4")) ){
               $nouvelle_classe = 'no-aside';
             }
         if (is_page_template('template-atelier.php')) {
             $nouvelle_classe = '';
+            get_template_part("template-parts/aside-atelier");
         }
-    ?>
-
-    <?php 
-    if ( ! is_front_page()){
-    get_template_part("template-parts/aside"); 
-    }
+     
+        if ( ! is_front_page()){
+            get_template_part("template-parts/aside"); 
+        }
     ?>

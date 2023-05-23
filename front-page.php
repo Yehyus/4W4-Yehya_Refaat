@@ -16,7 +16,7 @@
 
         <?php 
             wp_nav_menu(array(
-                "menu"=>"Contenu-Accueil",
+                "menu"=>"Atelier",
                 "container"=>"nav"
         ));
         ?>
