@@ -1,4 +1,4 @@
-# Exam intra
+# Épreuve finale
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur: Yehya Refaat
 ### Professeur : Eddy Martin
@@ -7,7 +7,7 @@
 
 - Reproduction d'une maquette
 - Ajout de template-parts 
-- Page adaptative avec media query
+- Amélioration du thème
 
 # Références
 
